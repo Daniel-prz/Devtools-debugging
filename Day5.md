@@ -29,7 +29,7 @@ In this README.md file, document each problem. Write a sentence for each problem
 
 #### Problem 3:
 
-- Description:
+- Description: Using JQuery for just one line of code "Minimize third party usage"(Lighthouse)
 
 #### Problem 4:
 
@@ -37,7 +37,7 @@ In this README.md file, document each problem. Write a sentence for each problem
 
 #### Problem 5:
 
-- Description: No previous styling needing !important to overwrite
+- Description: !important used unnecessarily
 
 #### Problem 6:
 
@@ -45,11 +45,23 @@ In this README.md file, document each problem. Write a sentence for each problem
 
 #### Problem 7:
 
-- Description: unnecessary selector specificity, id selector already sufficient
+- Description: image too large, and height not given explicit value
 
 #### Problem 8:
 
 - Description: unnecessary selector specificity, id selector already sufficient
+
+#### Problem 9:
+
+- Description: Loop running off asynchronous data, may take long to load
+
+#### Problem 10:
+
+- Description: Thread-blocking, unnecessarily long loop
+
+#### Problem 11:
+
+- Description: JQuery usage for one line of code
 
 ---
 
@@ -65,12 +77,12 @@ For each identified problem, propose a solution or an optimization strategy. Bri
 
 #### Problem 2:
 
-- Solution: set image height and width with explicit values,
+- Solution: set image size smaller with explicit values for height and width,
   possibly with clamp css selector
 
 #### Problem 3:
 
-- Solution:
+- Solution: Delete JQuery and write javascript manually
 
 #### Problem 4:
 
@@ -86,15 +98,11 @@ For each identified problem, propose a solution or an optimization strategy. Bri
 
 #### Problem 7:
 
-- Solution: simply use the # and id name
-
-#### Problem 7:
-
-- Solution: simply use the # and id name
+- Solution: make image smaller, and declare explicit width and height
 
 #### Problem 8:
 
-- Solution:
+- Solution: get rid of unnecessary specificity, use just h2 or create and add class styles for h2
 
 #### Problem 9:
 
@@ -102,17 +110,20 @@ For each identified problem, propose a solution or an optimization strategy. Bri
 
 #### Problem 10:
 
-- Solution:
+- Solution: delete unnecesessary loop
 
 #### Problem 11:
 
-- Solution:
+- Solution: Instead of using JQuery, write out the Javascript manually
 
 ---
 
 ### Step 4: Reflect
 
 After completing the exercise, write a brief reflection on what you learned from this debugging and optimization process. Discuss any new insights you gained and how you might apply these skills in future projects.
+
+Through this assignment, I've seen the importance of best practices for performance and efficiency, and the utility
+of Lighthouse, Performance, and Network tabs, to easily measure performance and detect problems in code.
 
 ## Submission
 
